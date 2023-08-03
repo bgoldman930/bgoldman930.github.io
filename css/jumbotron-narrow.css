@@ -53,7 +53,7 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-  margin: 0px 0 40px 0;
+  margin: 40px 0 40px 0;
 }
 .marketing p + h4 {
   margin-top: 28px;
@@ -70,7 +70,7 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
