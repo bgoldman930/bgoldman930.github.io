@@ -14,7 +14,7 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 h3.text-muted a {text-decoration: none; color: #999999; }
 h3.text-muted a:hover { text-decoration: none; color: #A51C30; }
 
-img.avatar { width: 180px; margin-top: 20px; margin-bottom: 20px; }
+img.avatar { width: 200px; margin-top: 20px; margin-bottom: 20px; }
 		
 /* Custom container */
 .container > hr { margin: 30px 0; }
@@ -135,4 +135,28 @@ a {
 
 a:hover {
     color: #731222;
+}
+
+.jm_container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.jm_column {
+	flex: 1;
+	margin-right: 5px;
+}
+
+.jm_column p,
+.jm_column table {
+	font-size: 11pt;
+}
+
+.jm_column table td {
+	padding-right: 0px;
+}
+
+/* Add a new class to right-align the email addresses */
+.jm_column table .email {
+	text-align: right;
 }
