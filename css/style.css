@@ -103,6 +103,7 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	margin-bottom: 20px;
 	font-size: 11pt;
 	margin-left: 10px;
+	text-align: justify;
 }
 
 .abstract summary {
