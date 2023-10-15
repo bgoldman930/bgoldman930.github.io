@@ -161,3 +161,14 @@ a:hover {
 .jm_column table .email {
 	text-align: right;
 }
+
+.header h3 {
+	display: inline-block
+}
+
+@media screen and (min-width: 768px) {
+	.nav {
+		float: right !important;
+	}
+}
+
