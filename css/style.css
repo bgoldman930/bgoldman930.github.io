@@ -119,10 +119,10 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 }
 
 .coauthors {
-	font-size: 11pt;
-	font-style: italic;
+	font-size: 9.5pt;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	color: #4b4b4b;
 }
 
 .paper_title {
