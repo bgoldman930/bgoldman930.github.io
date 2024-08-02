@@ -138,6 +138,14 @@ a:hover {
     color: #731222;
 }
 
+a.c2 {
+    color: #4b4b4b;
+}
+
+a.c2:hover {
+    color: #2a2a2a;
+}
+
 .jm_container {
 	display: flex;
 	justify-content: space-between;
