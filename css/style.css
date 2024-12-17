@@ -125,6 +125,13 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	color: #4b4b4b;
 }
 
+.journal {
+	font-size: 11pt;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	color: #4b4b4b;
+}
+
 .paper_title {
 	font-size: 13pt;
 	margin-bottom: 5px;
