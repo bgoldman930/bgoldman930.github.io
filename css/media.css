@@ -39,7 +39,7 @@
 }
 
 .media-page .press-card time {
-  font-size: 0.75rem;
+  font-size: 1rem;
   letter-spacing: .05em;
   text-transform: uppercase;
   color: #777;                           /* same muted grey everywhere   */
@@ -47,7 +47,7 @@
 }
 
 .media-page .press-card h2 {
-  font-size: 1rem;                       /* matches Bootstrap h5 size    */
+  font-size: 1.4rem;                       /* matches Bootstrap h5 size    */
   line-height: 1.4;
   margin: 0;
   font-weight: 600;
@@ -55,6 +55,6 @@
 
 .media-page .press-card cite {
   font-style: normal;
-  font-size: .85rem;
+  font-size: 1rem;
   color: #a94442;                        /* uses your theme’s accent red */
 }
