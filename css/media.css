@@ -1,0 +1,60 @@
+/*  css/media.css  */
+/* Only affects the media page ------------------------------------- */
+.media-page {
+  /* Let your global styles handle body bg & fonts */
+  padding-bottom: 4rem; /* mimic other pages’ spacing */
+}
+
+/* ---- grid ---- */
+.media-page .press-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* ---- card ---- */
+.media-page .press-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  /* pull colours from Bootstrap so they match your theme */
+  background: #ffffff;                   /* same as the site’s card bg   */
+  border: 1px solid #e5e5e5;             /* matches existing borders     */
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;                        /* inherit site link colour     */
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.media-page .press-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
+.media-page .press-card img.logo {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.media-page .press-card time {
+  font-size: 0.75rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #777;                           /* same muted grey everywhere   */
+  margin-bottom: .25rem;
+}
+
+.media-page .press-card h2 {
+  font-size: 1rem;                       /* matches Bootstrap h5 size    */
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 600;
+}
+
+.media-page .press-card cite {
+  font-style: normal;
+  font-size: .85rem;
+  color: #a94442;                        /* uses your theme’s accent red */
+}
