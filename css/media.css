@@ -62,4 +62,6 @@
 /* bump up the logo size                         */
 .media-page img.logo-lg {
   max-height: 74px;   /* was 48 px or 56 px in the defaults */
+  width: auto;
+  object-fit: contain;
 }
