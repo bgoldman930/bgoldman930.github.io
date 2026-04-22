@@ -118,6 +118,108 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	margin-left: 10px;
 }
 
+/* Three-toggle section pattern: Abstract / Resources / Press */
+.section-toggle { display: none; }
+
+.toggles-row {
+	margin-top: 12px;
+	margin-bottom: 5px;
+	margin-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 26px;
+	row-gap: 8px;
+	align-items: center;
+}
+
+.toggle-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	cursor: pointer;
+	color: #4b4b4b;
+	font-size: 11pt;
+	line-height: 1;
+	user-select: none;
+	margin-bottom: 0;
+	font-family: 'Lora', Georgia, Times;
+	font-weight: 400;
+}
+
+.toggle-pill:hover { color: #A51C30; }
+
+.toggle-pill .pill-marker {
+	display: inline-block;
+	font-size: 9pt;
+	width: 9px;
+	transition: transform 0.15s ease;
+	color: #8a8a8a;
+}
+
+.toggle-pill:hover .pill-marker { color: #A51C30; }
+
+.toggle-pill svg {
+	flex-shrink: 0;
+	color: currentColor;
+}
+
+.section-content {
+	display: none;
+	margin-top: 16px;
+	margin-bottom: 18px;
+}
+
+/* Link chips: horizontal wrapping chips used for Resources and Press */
+.resource-list,
+.press-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 0;
+	margin: 0 0 0 4px;
+	list-style: none;
+}
+.resource-list li,
+.press-chips li { margin: 0; }
+.resource-list a,
+.press-chips a {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 5px 12px;
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+	font-size: 10.5pt;
+	color: #4b4b4b;
+	text-decoration: none;
+	line-height: 1.3;
+	transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.resource-list svg {
+	color: currentColor;
+	flex-shrink: 0;
+	opacity: 0.7;
+}
+.resource-list a:hover,
+.press-chips a:hover {
+	border-color: #A51C30;
+	color: #A51C30;
+	background: #fbf1f3;
+}
+.resource-list a:hover svg { opacity: 1; }
+
+input.abstract-toggle:checked ~ .toggles-row .pill-abstract .pill-marker,
+input.resources-toggle:checked ~ .toggles-row .pill-resources .pill-marker,
+input.press-toggle:checked ~ .toggles-row .pill-press .pill-marker {
+	transform: rotate(90deg);
+}
+
+input.abstract-toggle:checked ~ .abstract-section,
+input.resources-toggle:checked ~ .resources-section,
+input.press-toggle:checked ~ .press-section {
+	display: block;
+}
+
 .coauthors {
 	font-size: 9.5pt;
 	margin-bottom: 5px;
