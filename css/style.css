@@ -92,8 +92,55 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	margin: 5px 15px 0px 0px;
 	font-family: 'Montserrat', Helvetica, sans-serif; }
 
+.paper-section {
+	display: grid;
+	grid-template-columns: 130px 1fr;
+	column-gap: 28px;
+	margin-bottom: 60px;
+}
+.paper-section:first-of-type { margin-top: 10px; }
+
+.paper-section > .section-title {
+	grid-column: 1;
+	grid-row: 1 / 1000;
+	font-family: 'Montserrat', Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 16px;
+	font-weight: 700;
+	color: #2a2a2a;
+	margin: 0;
+	padding-top: 18px;
+	line-height: 1.3;
+	position: sticky;
+	top: 20px;
+	align-self: start;
+}
+.paper-section > .project { grid-column: 2; }
+
+@media screen and (max-width: 767px) {
+	.paper-section {
+		grid-template-columns: 1fr;
+		column-gap: 0;
+		margin-bottom: 40px;
+	}
+	.paper-section > .section-title {
+		grid-column: 1;
+		grid-row: auto;
+		position: static;
+		margin-bottom: 20px;
+	}
+	.paper-section > .project { grid-column: 1; }
+}
+
 .project {
-	margin-bottom: 41px;
+	margin-bottom: 20px;
+	padding: 18px 20px;
+	border-radius: 6px;
+	transition: background-color 0.18s ease;
+}
+.project:hover {
+	background-color: #fbf1f3;
 }
 .project p {
 	line-height: 1.2;
@@ -117,6 +164,14 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	margin-top: 5px;
 	margin-left: 10px;
 }
+
+.prev-title {
+	font-size: 10pt;
+	font-style: italic;
+	color: #8a8a8a;
+	margin: -2px 0 8px 0;
+}
+.prev-title i { font-style: normal; }
 
 /* Three-toggle section pattern: Abstract / Resources / Press */
 .section-toggle { display: none; }
@@ -221,7 +276,7 @@ input.press-toggle:checked ~ .press-section {
 }
 
 .coauthors {
-	font-size: 9.5pt;
+	font-size: 11pt;
 	margin-bottom: 5px;
 	margin-left: 0px;
 	color: #4b4b4b;
@@ -236,8 +291,19 @@ input.press-toggle:checked ~ .press-section {
 
 .journal strong { font-weight: 600; font-style: italic; }
 
+.journal .meta-dot {
+	display: inline-block;
+	font-size: 1.4em;
+	line-height: 0;
+	vertical-align: -0.12em;
+	margin: 0 4px;
+	color: #8a8a8a;
+	font-weight: 400;
+	font-style: normal;
+}
+
 .paper_title {
-	font-size: 13pt;
+	font-size: 12.5pt;
 	margin-bottom: 5px;
 }
 
