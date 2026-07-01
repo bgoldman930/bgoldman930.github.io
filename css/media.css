@@ -34,6 +34,7 @@
 
 .media-page .press-card img.logo {
   max-height: 48px;
+  max-width: 100%;
   width: auto;
   object-fit: contain;
 }
